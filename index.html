@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=5">
+    <title>Online Computer Shop</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <svg class="svg-sprite" aria-hidden="true" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-laptop" viewBox="0 0 92.821 92.821">
+                <title>laptop</title>
+                <path d="M77.45 65.06V52.924h-4.452v9.702a2.764 2.764 0 0 1-2.756 2.756H15.106a2.764 2.764 0 0 1-2.756-2.756V29.554a2.764 2.764 0 0 1 2.756-2.759H46.65v-2.827H11.066a3.171 3.171 0 0 0-3.167 3.16V68.22L0 77.704a4.743 4.743 0 0 0 4.738 4.746h75.868a4.743 4.743 0 0 0 4.738-4.746l-7.899-9.484v-3.16h.005zM49.002 80.864H36.354c-.44 0-.791-.351-.791-.791s.351-.791.791-.791h12.644a.791.791 0 0 1 .004 1.582zm-19.358-3.16l2.412-2.895h21.237l2.412 2.895H29.644z"/><path d="M37.485 47.287h6.603v6.596h-6.603zM41.622 38.219h6.599v6.603h-6.599zM48.114 46.5h6.599v6.599h-6.599zM53.361 35.534h7.831v7.831h-7.831zM64.437 11.531h7.831v7.831h-7.831zM50.229 25.693h7.831v7.831h-7.831zM62.537 22.343h11.184v11.184H62.537zM70.89 35.824h13.528v13.532H70.89zM76.011 10.372h16.81v16.81h-16.81zM60.518 44.263h7.831v7.831h-7.831z"/>
+            </symbol>
+        </defs>
+    </svg>
+    <main class="wrapper">
+        <header class="header">
+            <div class="header__outer">
+                <div class="header__itm">
+                    <a href="#" title="Home page" class="logo">
+                        <svg class="logo__svg">
+                            <use xlink:href="#icon-laptop"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__itm">
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__list-li">
+                                <a class="nav__list-link" href="#" title="home page">Home</a>
+                            </li>
+                            <li class="nav__list-li">
+                                <a class="nav__list-link" href="#" title="About company">About</a>
+                            </li>
+                            <li class="nav__list-li">
+                                <a class="nav__list-link" href="#" title="Services of company">Services</a>
+                            </li>
+                            <li class="nav__list-li">
+                                <a class="nav__list-link" href="#" title="Contacts us">Contacts</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <form class="form form--search" role="search" aria-labelledby="search">
+                        <label id="search">
+                            Search
+                            <input class="form__inp" type="text" name="search">
+                        </label>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="content__outer">
+                <div class="content__itm content__itm--aside">
+                    <aside class="aside">
+                        <h2 class="title-h2">Products</h2>
+                        <div class="product">
+                            <ul class="product__list">
+                                <li class="product__list-li">
+                                    <a class="product__list-link" href="#" title="Desktops">Desktops</a>
+                                </li>
+                                <li class="product__list-li">
+                                    <a class="product__list-link" href="#" title="Laptops">Laptops</a>
+                                </li>
+                                <li class="product__list-li">
+                                    <a class="product__list-link" href="#" title="Monitors">Monitors</a>
+                                </li>
+                                <li class="product__list-li">
+                                    <a class="product__list-link" href="#" title="Monitors">
+                                        <abbr title="central processing unit">CPUS</abbr> / processors</a>
+                                </li>
+                            </ul>
+                            <button class="btn" type="button" value="Registration">Registration</button>
+                        </div>
+                    </aside>
+                </div>
+                <div class="content__itm content__itm--main">
+                    <section class="feedback" aria-labelledby="Contact Us">
+                        <h1 class="title-h1" id="Contact Us">Contact Us</h1>
+                        <p>We want to hear from you.Please use the form below to send us a message. We will contact you shortly. </p>
+                        <form class="form" aria-labelledby="callback">
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend" id="callback">Personal info</legend>
+                                <div class="form__itm">
+                                    <label class="form__label" for="firstname">First name</label>
+                                    <input class="form__inp" type="text" name="firstname" id="firstname">
+                                </div>
+                                <div class="form__itm">
+                                    <label class="form__label" for="email">Email</label>
+                                    <input class="form__inp" type="email" name="email" id="email" required aria-required="true">
+                                </div>
+                                <div class="form__itm">
+                                    <label class="form__label" for="phone">Phone (999 99 999 99 99)</label>
+                                    <input class="form__inp" type="tel" name="phone" id="phone" required aria-required="true" minlength="12" maxlength="12">
+                                </div>
+                            </fieldset>
+                            <fieldset class="form__fieldset">
+                                <legend class="form__legend">Choose time for callback</legend>
+                                <div class="form__itm">
+                                    <input type="radio" name="time" id="morning" value="morning" checked>
+                                    <label class="form__label" for="morning">Morning</label>
+                                </div>
+                                <div class="form__itm">
+                                    <input type="radio" name="time" id="evening" value="evening">
+                                    <label class="form__label" for="evening">Evening</label>
+                                </div>
+                            </fieldset>
+                            <button class="btn" type="submit" value="submit">Send form</button>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p class="footer__copy">All prices are in USD. © 2015-2019</p>
+        </footer>
+    </main>
+</body>
+</html>
